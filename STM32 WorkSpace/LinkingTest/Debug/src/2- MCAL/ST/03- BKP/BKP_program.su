@@ -1,0 +1,16 @@
+BKP_program.c:20:6:MBKP_voidStore	16	static
+BKP_program.c:26:5:MBKP_u16Retrieve	16	static
+BKP_program.c:33:4:MBKP_u8GetRTCCalibrationValue	4	static
+BKP_program.c:38:6:MBKP_voidEnableRTCOutputOnTamperPin	4	static
+BKP_program.c:45:6:MBKP_voidSetRTCCalibration	16	static
+BKP_program.c:54:6:MBKP_voidSetTamperConfiguration	16	static
+BKP_program.c:60:6:MBKP_voidEnableTamperPin	4	static
+BKP_program.c:65:6:MBKP_voidDisableTamperPin	4	static
+BKP_program.c:70:6:MBKP_voidEnableTamperInterrupt	4	static
+BKP_program.c:75:6:MBKP_voidDisableTamperInterrupt	4	static
+BKP_program.c:80:5:MBKP_u8GetTamperEventState	4	static
+BKP_program.c:85:4:MBKP_u8GetTamperInterruptState	4	static
+BKP_program.c:90:6:MBKP_voidClearTamperEvent	4	static
+BKP_program.c:95:6:MBKP_voidClearTamperInterrupt	4	static
+BKP_program.c:100:6:MBKP_voidSetTamperCallBack	16	static
+BKP_program.c:105:6:TAMPER_IRQHandler	8	static

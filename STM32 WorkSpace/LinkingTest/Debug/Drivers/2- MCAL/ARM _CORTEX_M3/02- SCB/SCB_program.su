@@ -1,0 +1,13 @@
+SCB_program.c:20:6:MSCB_voidSetInterruptGroups	24	static
+SCB_program.c:29:6:MSCB_voidRequestSystemReset	16	static
+SCB_program.c:38:6:MSCB_voidSetExceptionPriority	16	static
+SCB_program.c:59:6:MSCB_voidEnableException	16	static
+SCB_program.c:76:6:MSCB_voidDisableException	16	static
+SCB_program.c:93:6:MSCB_voidSetExceptionPending	16	static
+SCB_program.c:118:6:MSCB_voidClearExceptionPending	16	static
+SCB_program.c:143:4:MSCB_u8GetExceptionStatus	24	static
+SCB_program.c:163:6:MSCB_voidEnableSleepNow	4	static
+SCB_program.c:169:6:MSCB_voidDisableSleepNow	4	static
+SCB_program.c:175:6:MSCB_voidEnableDeepSleep	4	static
+SCB_program.c:180:6:MSCB_voidDisableDeepSleep	4	static
+SCB_program.c:185:6:MSCB_voidSetEventOnPendingInterrupt	16	static

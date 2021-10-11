@@ -1,0 +1,16 @@
+GPIO_program.c:21:6:MGPIO_voidSetPinDirection	16	static
+GPIO_program.c:36:6:MGPIO_voidSetPortDirection	24	static
+GPIO_program.c:48:6:MGPIO_voidSetPinSpeed	16	static
+GPIO_program.c:63:6:MGPIO_voidSetPortSpeed	24	static
+GPIO_program.c:78:6:MGPIO_voidSetPinPull	16	static
+GPIO_program.c:82:6:MGPIO_voidSetPortPull	16	static
+GPIO_program.c:87:6:MGPIO_voidSetPin	16	static
+GPIO_program.c:94:6:MGPIO_voidSetPort	16	static
+GPIO_program.c:101:6:MGPIO_voidClearPin	16	static
+GPIO_program.c:108:6:MGPIO_voidClearPort	16	static
+GPIO_program.c:115:6:MGPIO_voidSetPinValue	16	static
+GPIO_program.c:125:6:MGPIO_voidSetPortValue	16	static
+GPIO_program.c:133:5:MGPIO_u8GetPinValue	16	static
+GPIO_program.c:139:5:MGPIO_u16GetPortValue	16	static
+GPIO_program.c:145:6:MGPIO_voidLockPin	16	static
+GPIO_program.c:158:6:MGPIO_voidLockPort	16	static

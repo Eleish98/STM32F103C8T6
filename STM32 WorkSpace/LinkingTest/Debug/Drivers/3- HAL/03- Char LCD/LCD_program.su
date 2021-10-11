@@ -1,0 +1,17 @@
+LCD_program.c:16:6:PLCD_voidWrite8Bits	24	static
+LCD_program.c:23:6:PLCD_voidWrite4Bits	24	static
+LCD_program.c:31:6:PLCD_voidEnable	16	static
+LCD_program.c:43:6:PLCD_voidWaitForBusyFlag	24	static
+LCD_program.c:61:6:PLCD_voidWriteCommand	16	static
+LCD_program.c:78:6:PLCD_voidWriteData	16	static
+LCD_program.c:94:6:HLCD_voidInit	24	static
+LCD_program.c:128:6:HLCD_voidWriteChar	16	static
+LCD_program.c:133:6:HLCD_voidWriteString	24	static
+LCD_program.c:147:6:HLCD_voidWriteArray	32	static
+LCD_program.c:160:6:HLCD_voidWriteNumber	48	static
+LCD_program.c:175:6:HLCD_voidSetPosition	24	static
+LCD_program.c:184:6:HLCD_voidClearScreen	16	static
+LCD_program.c:189:6:HLCD_voidGoHome	16	static
+LCD_program.c:194:6:HLCD_voidSetCursorMode	24	static
+LCD_program.c:201:6:HLCD_voidRotateDisplayRight	16	static
+LCD_program.c:205:6:HLCD_voidRotateDisplayLeft	16	static

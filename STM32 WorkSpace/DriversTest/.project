@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>DriversTest</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.genmakebuilder</name>
+			<triggers>clean,full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.cdt.managedbuilder.core.ScannerConfigBuilder</name>
+			<triggers>full,incremental,</triggers>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
+		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>1-LIB</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/1-LIB</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>4-APP</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/01- SevenSegment</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/02- KeyPad</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/03- Char LCD</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/04- L298</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/05- SERVO</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/06- A4988</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/07- STP</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/01-NVIC</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/02-SCB</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/03-STK</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/04-MPU</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/01- CRC</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/02- PWR</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/03- BKP</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/04- RCC</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/05- GPIO</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/06- AFIO</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/07- EXTI</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/08- ADC</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/10- DMA</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/11- ADVANCED TIMERS (1,8)</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/12- GP TIMERS (2-5)</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/13-  RTC</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/14- IWDG</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/15- WWDG</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/16- USB</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/17- CAN</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/18- SPI</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/19- I2C</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/20- USART</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/01- SevenSegment/SevenSegment_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/01-%20SevenSegment/SevenSegment_interface.h</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/01- SevenSegment/SevenSegment_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/01-%20SevenSegment/SevenSegment_private.h</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/01- SevenSegment/SevenSegment_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/01-%20SevenSegment/SevenSegment_program.c</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/02- KeyPad/Keypad_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/02-%20KeyPad/Keypad_interface.h</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/02- KeyPad/Keypad_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/02-%20KeyPad/Keypad_private.h</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/02- KeyPad/Keypad_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/02-%20KeyPad/Keypad_program.c</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/03- Char LCD/LCD_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/03-%20Char%20LCD/LCD_interface.h</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/03- Char LCD/LCD_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/03-%20Char%20LCD/LCD_private.h</locationURI>
+		</link>
+		<link>
+			<name>3-HAL/03- Char LCD/LCD_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/3-HAL/03-%20Char%20LCD/LCD_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/01-NVIC/NVIC_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/01-NVIC/NVIC_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/01-NVIC/NVIC_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/01-NVIC/NVIC_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/01-NVIC/NVIC_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/01-NVIC/NVIC_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/02-SCB/SCB_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/02-SCB/SCB_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/02-SCB/SCB_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/02-SCB/SCB_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/02-SCB/SCB_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/02-SCB/SCB_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/03-STK/STK_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/03-STK/STK_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/03-STK/STK_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/03-STK/STK_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ARM _CORTEX_M3/03-STK/STK_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ARM%20_CORTEX_M3/03-STK/STK_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/01- CRC/CRC_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/01-%20CRC/CRC_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/01- CRC/CRC_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/01-%20CRC/CRC_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/01- CRC/CRC_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/01-%20CRC/CRC_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/02- PWR/PWR_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/02-%20PWR/PWR_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/02- PWR/PWR_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/02-%20PWR/PWR_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/02- PWR/PWR_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/02-%20PWR/PWR_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/03- BKP/BKP_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/03-%20BKP/BKP_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/03- BKP/BKP_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/03-%20BKP/BKP_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/03- BKP/BKP_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/03-%20BKP/BKP_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/04- RCC/RCC_config.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/04-%20RCC/RCC_config.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/04- RCC/RCC_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/04-%20RCC/RCC_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/04- RCC/RCC_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/04-%20RCC/RCC_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/04- RCC/RCC_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/04-%20RCC/RCC_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/05- GPIO/GPIO_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/05-%20GPIO/GPIO_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/05- GPIO/GPIO_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/05-%20GPIO/GPIO_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/05- GPIO/GPIO_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/05-%20GPIO/GPIO_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/06- AFIO/AFIO_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/06-%20AFIO/AFIO_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/06- AFIO/AFIO_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/06-%20AFIO/AFIO_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/06- AFIO/AFIO_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/06-%20AFIO/AFIO_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/07- EXTI/EXTI_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/07-%20EXTI/EXTI_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/07- EXTI/EXTI_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/07-%20EXTI/EXTI_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/07- EXTI/EXTI_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/07-%20EXTI/EXTI_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/08- ADC/ADC_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/08-%20ADC/ADC_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/08- ADC/ADC_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/08-%20ADC/ADC_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/08- ADC/ADC_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/08-%20ADC/ADC_program.c</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/10- DMA/DMA_interface.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/10-%20DMA/DMA_interface.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/10- DMA/DMA_private.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/10-%20DMA/DMA_private.h</locationURI>
+		</link>
+		<link>
+			<name>2-MCAL/ST/10- DMA/DMA_program.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Drivers/2-MCAL/ST/10-%20DMA/DMA_program.c</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -1,0 +1,70 @@
+/************************************************/
+/*	Author		:		Mohamed G. ELeish		*/
+/*	Date		:		4 September 2021		*/
+/*	Version		:		V01						*/
+/************************************************/
+
+/************************************************/
+/************************************************/
+/*****					LOG					*****/
+/*	4/9/2021:	File Created					*/
+/************************************************/
+/************************************************/
+
+
+#ifndef RCC_INTERFACE_H_INCLUDDED
+#define RCC_INTERFACE_H_INCLUDDED
+
+typedef enum
+{
+	RCC_PER_TIM2,RCC_PER_TIM3,RCC_PER_TIM4,RCC_PER_TIM5,RCC_PER_TIM6,RCC_PER_TIM7,RCC_PER_TIM12,RCC_PER_TIM13,RCC_PER_TIM14,
+	RCC_PER_WWDG=11,RCC_PER_SPI2=14,RCC_PER_SPI3,RCC_PER_USART2=17,RCC_PER_USART3,RCC_PER_USART4,USART_5,RCC_PER_I2C1,
+	RCC_PER_I2C2,RCC_PER_USB,RCC_PER_CAN=25,RCC_PER_BKP=27,RCC_PER_PWR,RCC_PER_DAC,RCC_PER_AFIO,RCC_PER_GPIOA=32,RCC_PER_GPIOB,
+	RCC_PER_GPOIC,RCC_PER_GPIOD,RCC_PER_GPIOE,RCC_PER_GPIOF,RCC_PER_GPIOG,RCC_PER_ADC1,RCC_PER_ADC2,RCC_PER_TIM1,RCC_PER_SPI1,
+	RCC_PER_TIM8,RCC_PER_USART1,RCC_PER_ADC3,RCC_PER_TIM9=50,RCC_PER_TIM10,RCC_PER_TIM11,RCC_PER_DMA1=53,RCC_PER_DMA2,
+	RCC_PER_SRAM,RCC_PER_FLITF=57,RCC_PER_CRC=59,RCC_PER_FSMC=61,RCC_PER_SDIO=63
+}RCC_PeripheralID_t;
+
+typedef enum
+{
+	RCC_MCO_SYSTEM_CLOCK = 1,
+	RCC_MCO_HSI_CLOCK,
+	RCC_MCO_HSE_CLOCK,
+	RCC_MCO_PLL_CLOCK_DIV_2
+}RCC_MCO_Source_t;
+
+typedef enum{
+	RCC_INTERRUPT_LSI_READY,
+	RCC_INTERRUPT_LSE_READY,
+	RCC_INTERRUPT_HSI_READY,
+	RCC_INTERRUPT_HSE_READY,
+	RCC_INTERRUPT_PLL_READY,
+
+}RCC_Interrupt_t;
+
+void MRCC_voidInitClock(void);
+
+void MRCC_voidEnablePeripheral(RCC_PeripheralID_t Copy_Peripheral);
+
+void MRCC_voidDisablePeripheral(RCC_PeripheralID_t Copy_Peripheral);
+
+void MRCC_voidResetPeripheral(RCC_PeripheralID_t Copy_Peripheral);
+
+void MRCC_voidEnableMCO(RCC_MCO_Source_t Copy_Source);
+
+void MRCC_voidDisableMCO(void);
+
+void MRCC_voidSetCallBack(RCC_Interrupt_t Interrupt, void(*Callback)(void));
+
+void MRCC_voidEnableInterrupt(RCC_Interrupt_t Interrupt);
+
+void MRCC_voidDisableInterrupt(RCC_Interrupt_t Interrupt);
+
+u8 MRCC_u8GetIneterruptStatus(RCC_Interrupt_t Interrupt);
+
+void MRCC_voidClearInterrupt(RCC_Interrupt_t Interrupt);
+
+
+
+#endif
+

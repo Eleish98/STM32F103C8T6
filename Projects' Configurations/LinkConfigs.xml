@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="S,s,asm">
+<includepath>src</includepath>
+<includepath>Libraries/STM32F10x_StdPeriph_Driver/inc</includepath>
+<includepath>Libraries/CMSIS/Device/ST/STM32F10x/Include</includepath>
+<includepath>Libraries/CMSIS/Include</includepath>
+<includepath workspace_path="true">/${ProjName}/LIB</includepath>
+<includepath workspace_path="true">/${ProjName}/HAL</includepath>
+<includepath workspace_path="true">/${ProjName}/Drivers</includepath>
+<includepath workspace_path="true">/${ProjName}/src/1- LIB</includepath>
+
+</language>
+<language name="C Source File">
+<includepath>src</includepath>
+<includepath>Libraries/STM32F10x_StdPeriph_Driver/inc</includepath>
+<includepath>Libraries/CMSIS/Device/ST/STM32F10x/Include</includepath>
+<includepath>Libraries/CMSIS/Include</includepath>
+<includepath workspace_path="true">/${ProjName}/Drivers</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="S,s,asm">
+<macro>
+<name>STM32F10X_MD</name><value/>
+</macro>
+<macro>
+<name>USE_STDPERIPH_DRIVER</name><value/>
+</macro>
+
+</language>
+<language name="C Source File">
+<macro>
+<name>STM32F10X_MD</name><value/>
+</macro>
+<macro>
+<name>USE_STDPERIPH_DRIVER</name><value/>
+</macro>
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+</cdtprojectproperties>

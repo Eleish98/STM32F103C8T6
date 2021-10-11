@@ -1,0 +1,57 @@
+/************************************************/
+/*	Author		:		Mohamed G. ELeish		*/
+/*	Date		:		5 September 2021		*/
+/*	Version		:		V01						*/
+/************************************************/
+
+/************************************************/
+/************************************************/
+/*****					LOG					*****/
+/*	5/9/2021:	File Created					*/
+/************************************************/
+/************************************************/
+
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+#include "CRC_interface.h"
+#include "CRC_private.h"
+
+void MCRC_voidInit(void){
+	SET_BIT(CRC_REG->CR,0);
+}
+
+u32 MCRC_u32CalculateOnWord(u32 Copy_u32Word){
+	SET_BIT(CRC_REG->CR,0);
+	CRC_REG->DR = Copy_u32Word;
+	return CRC_REG->DR;
+}
+
+u32 MCRC_u32CalculateOnArray(u32 *Copy_u32Ptr, u32 Len){
+	SET_BIT(CRC_REG->CR,0);
+	for(u32 i = 0; i < Len; i++)
+		CRC_REG->DR = Copy_u32Ptr[i];
+	return CRC_REG->DR;
+}
+
+
+u32 MCRC_u32CalculateOnByte(u8 Copy_u8Byte){
+	SET_BIT(CRC_REG->CR,0);
+	CRC_REG->DR = (0xFFFFFF00 | Copy_u8Byte);
+	return (CRC_REG->DR) & 0xFF;
+}
+
+u32 MCRC_u32CalculateOnByteArray(u8* Copy_u8Ptr, u32 Len){
+	SET_BIT(CRC_REG->CR,0);
+	for(u32 i = 0; i < Len; i++)
+		CRC_REG->DR = (0xFFFFFF00) | (Copy_u8Ptr[i]);
+	return (CRC_REG->DR) & 0xFF;
+}
+
+u32 MCRC_u32CalculateOnHalfWord(u16 Copy_u8Byte){
+
+}
+
+u32 MCRC_u32CalculateOnHalfArray(u16* Copy_u8Ptr, u32 Len){
+
+}

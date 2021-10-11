@@ -1,0 +1,9 @@
+#
+#Mon Oct 11 01:23:10 EET 2021
+src/main.c=1
+Debug/DriversTest.elf=1
+DriversTest.elf=1
+Debug/src/main.o=1
+1-LIB/STD_TYPES.h=1
+stm32_flash.ld=1
+Debug/DriversTest=1

@@ -1,0 +1,15 @@
+PWR_program.c:22:6:MPWR_voidEnableBackupDomainWrite	4	static
+PWR_program.c:27:6:MPWR_voidDisableBackupDomainWrite	4	static
+PWR_program.c:32:6:MPWR_voidSetPowerVoltageDetectorLevel	16	static
+PWR_program.c:38:6:MPWR_voidEnablePowerVoltageDetector	4	static
+PWR_program.c:43:6:MPWR_voidDisablePowerVoltageDetector	4	static
+PWR_program.c:48:6:MPWR_voidClearStandByFlag	4	static
+PWR_program.c:53:6:MPWR_voidClearWakeUpFlag	4	static
+PWR_program.c:58:6:MPWR_voidSetRegulatorMode	16	static
+PWR_program.c:64:6:MPWR_voidEnableWakeUpPin	4	static
+PWR_program.c:69:6:MPWR_voidDisableWakeUpPin	4	static
+PWR_program.c:74:18:MPWR_u8GetPoerVoltageDetectorLevel	4	static
+PWR_program.c:79:4:MPWR_u8GetStandByStatus	4	static
+PWR_program.c:84:4:MPWR_voidGetWakeUpStatus	4	static
+PWR_program.c:89:6:MPWR_voidSleep	16	static
+PWR_program.c:129:6:MPWR_voidSetWakeupEvent	16	static

@@ -1,0 +1,82 @@
+/************************************************/
+/*	Author		:		Mohamed G. ELeish		*/
+/*	Date		:		4 September 2021		*/
+/*	Version		:		V01						*/
+/************************************************/
+
+/************************************************/
+/************************************************/
+/*****					LOG					*****/
+/*	4/9/2021:	File Created					*/
+/************************************************/
+/************************************************/
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+#include "RCC_interface.h"
+#include "RCC_private.h"
+#include "RCC_config.h"
+
+void MRCC_voidInitClock(void){
+	/**** Set CPU Clock Source ****/
+	#if RCC_SYSETEM_CLOCK == RCC_CLOCK_HSE
+		//wait for the HSE Clock to be stable
+		while(!CHK_BIT((RCC_REG->CR),17));
+		#if RCC_HSE_SOURCE == RCC_HSE_CRYSTAL
+			//Enable CSS, HSEON, Disable HSEBYP
+			RCC_REG->CR = 0x00090000;
+		#else
+			//Enable CSS, HSEON, HSEBYP
+			RCC_REG->CR = 0x000D0000;
+		#endif
+		//Switch to HSE
+		RCC_REG->CFGR = 1;
+	#elif RCC_SYSETEM_CLOCK == RCC_CLOCK_PLL
+		
+		#if RCC_PLL_CLOCK_SOURCE == RCC_HSI_DIV_2
+			//wait for the HSI Clock to be stable
+			while(!CHK_BIT((RCC_REG->CR),1));
+			//Enable HSI
+			RCC_REG->CR = 0x00000001;
+			//Switch to HSI
+			RCC_REG->CFGR = 0;
+			SET_BIT(RCC_REG->CFGR,16);
+		#else
+			//wait for the HSE Clock to be stable
+			while(!CHK_BIT((RCC_REG->CR),17));
+			#if RCC_HSE_SOURCE == RCC_HSE_CRYSTAL
+			//Enable CSS, HSEON, Disable HSEBYP
+			RCC_REG->CR = 0x00090000;
+			#else
+			//Enable CSS, HSEON, HSEBYP
+			RCC_REG->CR = 0x000D0000;
+			#endif
+			//Switch to HSE
+			RCC_REG->CFGR = 1;
+			CLR_BIT(RCC_REG->CFGR,16);
+			#if RCC_PLL_CLOCK_SOURCE == RCC_HSE_DIV_2
+			SET_BIT((RCC_REG->CFGR),17);
+			#endif
+		//Set PLL Multiplier
+		RCC_REG->CFGR |= (RCC_PLL_MULIPLIER<<18);
+		//Wait for PLL Clock to be Stable
+		while(!CHK_BIT((RCC_REG->CR),25));
+		//Switch to PLL
+		RCC_REG->CFGR &= ~3;
+		RCC_REG->CFGR |= 2;
+	#endif
+	#elif RCC_SYSETEM_CLOCK == RCC_CLOCK_HSI
+		//wait for the HSI Clock to be stable
+		while(!CHK_BIT((RCC_REG->CR),1));
+		//Enable HSI
+		RCC_REG->CR = 0x00000001;
+		//Switch to HSI
+		RCC_REG->CFGR = 0;
+	#endif
+	
+}
+
+void MRCC_voidEnablePeripheral(PeripheralID_t);
+
+void MRCC_voidDisablePeripheral(PeripheralID_t);
+

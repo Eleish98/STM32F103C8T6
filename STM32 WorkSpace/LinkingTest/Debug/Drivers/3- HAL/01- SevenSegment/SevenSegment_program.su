@@ -1,0 +1,3 @@
+SevenSegment_program.c:24:6:HSEVENSEGMENT_voidInit	24	static
+SevenSegment_program.c:32:6:HSEVENSEGMENT_voidDisplay	24	static
+SevenSegment_program.c:46:6:HSEVENSEGMENT_voidTurnOff	24	static

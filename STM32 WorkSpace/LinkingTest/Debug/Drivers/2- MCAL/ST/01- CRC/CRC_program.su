@@ -1,0 +1,3 @@
+CRC_program.c:20:6:MCRC_voidInit	4	static
+CRC_program.c:25:5:MCRC_u32CalculateOnWord	16	static
+CRC_program.c:33:5:MCRC_u32CalculateOnWordArray	24	static

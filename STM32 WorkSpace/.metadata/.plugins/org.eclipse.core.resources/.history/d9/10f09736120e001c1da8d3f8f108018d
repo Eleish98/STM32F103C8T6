@@ -1,0 +1,39 @@
+/************************************************/
+/*	Author		:		Mohamed G. ELeish		*/
+/*	Date		:		4 September 2021		*/
+/*	Version		:		V01						*/
+/************************************************/
+
+/************************************************/
+/************************************************/
+/*****					LOG					*****/
+/*	4/9/2021:	File Created					*/
+/************************************************/
+/************************************************/
+
+
+#ifndef RCC_INTERFACE_H_INCLUDDED
+#define RCC_INTERFACE_H_INCLUDDED
+
+typedef enum
+{
+	RCC_ADC
+}RCC_PeripheralID_t;
+
+typedef enum
+{
+
+
+}RCC_MCO_Source_t;
+
+void MRCC_voidInitClock(void);
+
+void MRCC_voidEnablePeripheral(PeripheralID_t);
+
+void MRCC_voidDisablePeripheral(PeripheralID_t);
+
+void MRCC_voidEnableMCO()
+
+
+#endif
+

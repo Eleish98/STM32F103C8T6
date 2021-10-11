@@ -1,0 +1,14 @@
+RCC_program.c:20:6:MRCC_voidInitClock	4	static
+RCC_program.c:102:6:MRCC_voidEnablePeripheral	16	static
+RCC_program.c:116:6:MRCC_voidDisablePeripheral	16	static
+RCC_program.c:129:6:MRCC_voidResetPeripheral	16	static
+RCC_program.c:146:6:MRCC_voidEnableMCO	16	static
+RCC_program.c:152:6:MRCC_voidDisableMCO	4	static
+RCC_program.c:157:6:MRCC_voidSetCallBack	16	static
+RCC_program.c:164:6:MRCC_voidEnableInterrupt	16	static
+RCC_program.c:169:6:MRCC_voidDisableInterrupt	16	static
+RCC_program.c:175:4:MRCC_u8GetIneterruptStatus	16	static
+RCC_program.c:179:6:MRCC_voidClearInterrupt	16	static
+RCC_program.c:184:5:MRCC_u32GetSystemClock	16	static
+RCC_program.c:224:5:MRCC_u32GetBusClock	32	static
+RCC_program.c:251:6:RCC_IRQHandler	8	static

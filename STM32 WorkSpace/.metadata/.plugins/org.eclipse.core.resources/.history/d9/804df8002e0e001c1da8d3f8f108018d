@@ -1,0 +1,28 @@
+/************************************************/
+/*	Author		:		Mohamed G. ELeish		*/
+/*	Date		:		5 September 2021		*/
+/*	Version		:		V01						*/
+/************************************************/
+
+/************************************************/
+/************************************************/
+/*****					LOG					*****/
+/*	5/9/2021:	File Created					*/
+/************************************************/
+/************************************************/
+
+#ifndef CRC_INTERFACE_H_INCLUDED
+#define CRC_INTERFACE_H_INCLUDED
+
+void MCRC_voidInit(void);
+
+u32 MCRC_u32CalculateOnWord(u32 Copy_u32Word);
+
+u32 MCRC_u32CalculateOnArray(u32 *Copy_u32Ptr, u32 Len);
+
+u8 MCRC_u8CalculateOnByte(u8 Copy_u8Byte);
+
+u8 MCRC_u8CalculateOnByteArray(u8* Copy_u8Ptr, u32 Len);
+
+#endif
+
