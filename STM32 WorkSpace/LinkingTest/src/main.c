@@ -6,7 +6,7 @@
 int main(void){
 
 	while(1){
-		//This is a comment
+
 	}
 
 	return 0;
