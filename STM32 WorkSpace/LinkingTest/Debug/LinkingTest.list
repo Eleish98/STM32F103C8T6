@@ -29,11 +29,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  12 .debug_ranges 00000480  00000000  00000000  000236b8  2**3
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_line   00001479  00000000  00000000  00023b38  2**0
+ 13 .debug_line   00001478  00000000  00000000  00023b38  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_str    00002243  00000000  00000000  00024fb1  2**0
+ 14 .debug_str    00002242  00000000  00000000  00024fb0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .comment      0000007c  00000000  00000000  000271f4  2**0
+ 15 .comment      0000007c  00000000  00000000  000271f2  2**0
                   CONTENTS, READONLY
  16 .debug_frame  00001348  00000000  00000000  00027270  2**2
                   CONTENTS, READONLY, DEBUGGING
@@ -1322,7 +1322,7 @@ int main(void){
  8000928:	b480      	push	{r7}
  800092a:	af00      	add	r7, sp, #0
 
-	while(1);
+	while(1){
  800092c:	e7fe      	b.n	800092c <main+0x4>
 	...
 
