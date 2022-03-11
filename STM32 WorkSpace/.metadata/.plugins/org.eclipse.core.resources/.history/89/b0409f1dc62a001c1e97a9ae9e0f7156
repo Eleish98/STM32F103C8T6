@@ -1,7 +1,0 @@
-
-#include "s"
-
-void main(void){
-
-	while(1);
-}

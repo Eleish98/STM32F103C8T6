@@ -1,7 +1,0 @@
-
-#include "LIB/STD_TYPES.h"
-
-void main(void){
-
-	while(1);
-}
