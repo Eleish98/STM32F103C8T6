@@ -1,2 +1,6 @@
 *.o
 *.elf
+*.list
+*.map
+*.hex
+
