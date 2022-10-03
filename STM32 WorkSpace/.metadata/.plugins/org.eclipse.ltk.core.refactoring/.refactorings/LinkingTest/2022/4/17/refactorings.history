@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;LinkingTest/Drivers/3- HAL/04- RTC/External_RTC.c&apos; to &apos;ExRTC_program.c&apos;" description="Rename resource &apos;External_RTC.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/3- HAL/04- RTC/External_RTC.c" name="ExRTC_program.c" stamp="1650394146117" updateReferences="true"/>
+</session>
